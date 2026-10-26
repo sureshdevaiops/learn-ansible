@@ -1,12 +1,3 @@
-# learn-ansible
----
+# Ansible
 
-                          +--------+
-                    +---->| NODE-1 |
-                    |     +--------+
-+-----------+  SSH  |     +--------+
-| CM Server |-------+---->| NODE-2 |
-+-----------+       |     +--------+
- (control node)     |     +--------+
-                    +---->| NODE-3 |
-                          +--------+
+![alt text](ansible-push-vs-pull.png)
