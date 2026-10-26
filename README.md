@@ -19,5 +19,4 @@
 **Ansible Pull & Push**
 
 ![Ansible Pull & Push](ansible-push-vs-pull.png)
-
--------
+---------------
