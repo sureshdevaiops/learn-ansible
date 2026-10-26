@@ -13,8 +13,10 @@
 
 **Push V/S Pull**
 
-**Push:** The control node sends configurations to target servers.\n
+**Push:** The control node sends configurations to target servers.
+
 **Pull:** Target servers retrieve configurations from a central location.
+
 **Important:** Ansible normally uses the Push model. Ansible also supports the Pull model through ansible-pull.
 
 **Ansible Pull & Push**
@@ -44,8 +46,8 @@ ansible all -i 172.168.0.1, -e "ansible_user=ec2-user ansible_password=DevOps321
 - -a → Module arguments
 - state=present → Ensure Nginx is installed
 
-**Playbook** \n
-When we have repetitive tasks, we write all the tasks using Ansible modules in a file called a Playbook.
+**Playbook**
+When we have repetitive tasks, we write all the tasks using Ansible modules in a file called a Playbook. \n
 
 'Playbook' = Automate multiple tasks using a YAML file.
 
