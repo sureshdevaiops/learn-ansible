@@ -13,7 +13,7 @@
 
 **Push V/S Pull**
 
-**Push:** The control node sends configurations to target servers.
+**Push:** The control node sends configurations to target servers. \n
 
 **Pull:** Target servers retrieve configurations from a central location.
 
