@@ -22,7 +22,7 @@
 **Important:** Ansible normally uses the Push model. Ansible also supports the Pull model through ansible-pull.
 
 
-**Ansible Pull & Push**
+**Ansible Architecture**
 
 ![Ansible Pull & Push](ansible-push-vs-pull.png)
 ---------------
@@ -53,13 +53,7 @@ ansible all -i 172.168.0.1, -e "ansible_user=ec2-user ansible_password=DevOps321
 > When we have repetitive tasks, we write all the tasks using Ansible modules in a file called a Playbook. \n
 'Playbook' = Automate multiple tasks using a YAML file.
 
-YAML → Yet Another Markup Language
-
-
-HTML → HyperText Markup Language
-
-
-XML → eXtensible Markup Language
-
-
-JSON → JavaScript Object Notation
+- YAML → Yet Another Markup Language
+- HTML → HyperText Markup Language
+- XML → eXtensible Markup Language
+- JSON → JavaScript Object Notation
