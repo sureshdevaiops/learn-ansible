@@ -12,9 +12,14 @@
 - Configure required settings.
 
 **Push V/S Pull**
+
 **Push:** The control node sends configurations to target servers.
+
 **Pull:** Target servers retrieve configurations from a central location.
+
 **Important:** Ansible normally uses the Push model. Ansible also supports the Pull model through ansible-pull.
+
+
 
 **Ansible Pull & Push**
 
