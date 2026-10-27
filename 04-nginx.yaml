@@ -1,0 +1,18 @@
+- name: install and start nginx
+  hosts: frontend
+  become: yes # providing sudoe access
+  tasks:
+  - name: install nginx
+    package:
+      name: nginx
+      state: present
+  - name: state the ngix service
+    service:
+      name: nginx 
+      state: started
+      enabled: yes
+
+
+
+
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user ansible_password=DevOps321 04-nginx.yaml

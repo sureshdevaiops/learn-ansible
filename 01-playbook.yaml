@@ -1,0 +1,9 @@
+- name: ping demi
+  hostname: local # target ansible service itself
+  connection: local # it will not expect credentials
+  tasks: # tasks == modules == collections
+  - name: ping localhost
+    ping:
+
+# ansible-playbook -i inventory.ini 01-playbook.yaml
+

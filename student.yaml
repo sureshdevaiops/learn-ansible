@@ -1,0 +1,19 @@
+- first_name: "Suresh Reddy"
+  last_name: "K"
+  dob: "01-01-20"
+  # - is the list
+  addresses:
+  - type: permanent
+    doorNo: 1-566,
+    streetName: Gandi Nagar
+    city: Hyderabad
+  - type: temporary
+    doorNo: 1-566,
+    streetName: Gandi Nagar
+    city: Hyderabad
+  skills: 
+    OS: Linux
+    IDE: VSCode
+    CLOUD: AWS
+
+
