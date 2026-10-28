@@ -1,0 +1,11 @@
+- name: demo on play level variables
+  hosts: local
+  connection: local
+  vars:
+    course: "ansible"
+    trainer: Siva Kumar
+    duration: 10 hrs
+  tasks:
+  - name: print the vars  
+    debug:
+      msg: "Hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}"

@@ -1,14 +1,15 @@
 - name: install and start nginx
   hosts: frontend
-  become: yes # providing sudoe access
+  become: yes # providing sudo access
   tasks:
   - name: install nginx
     package:
       name: nginx
       state: present
-  - name: state the ngix service
+
+  - name: start nginx
     service:
-      name: nginx 
+      name: nginx
       state: started
       enabled: yes
 
