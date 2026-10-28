@@ -1,0 +1,8 @@
+- name: demo on variables from inventory
+  hosts: frontend
+  tasks:
+  - name: print the variables
+    debug:
+      msg: "Hi, i'm learning {{ course }} from {{ trainer }}, duration is {{ duration }}" 
+
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user ansible_password=DevOps321 09-variables.yaml

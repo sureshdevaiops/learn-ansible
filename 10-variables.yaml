@@ -1,0 +1,9 @@
+- name: print greeting
+  hosts: local
+  connection: local
+  tasks:
+  - name: print greeting
+    debug:
+      msg: "Hello {{ person_name }}"
+
+# ansible-playbook -i inventory.ini  -e "person_name=suresh k" 10-variables.yaml 
