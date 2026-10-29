@@ -1,0 +1,17 @@
+- name: demo on error handling
+  hots: local
+  connection: local
+  become: yes
+  tasks:
+  - name: chcek roboshop user exists or Not
+    command: id roboshop # linux command when there is not module exists
+    register: user_output
+    ignore_errors: true
+  
+  - name: print the output
+    debug:
+      msg: "{{ user_output }}"
+
+  - name: create user
+    command: useradd roboshop
+    when: user_output.rc != 0

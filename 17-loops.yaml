@@ -1,0 +1,19 @@
+- name: Install packages
+  hosts: local
+  connection: local
+  become: yes
+
+  vars:
+    packages:
+      - nginx
+      - mysql
+      - git
+      - net-tools
+      - htop
+
+  tasks:
+    - name: Install packages
+      package:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ packages }}"

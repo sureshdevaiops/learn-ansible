@@ -57,3 +57,5 @@ ansible all -i 172.168.0.1, -e "ansible_user=ec2-user ansible_password=DevOps321
 - HTML → HyperText Markup Language
 - XML → eXtensible Markup Language
 - JSON → JavaScript Object Notation
+
+

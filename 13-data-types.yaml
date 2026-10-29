@@ -1,0 +1,28 @@
+- name: Demo on data types
+  hosts: local
+  connection: local
+
+  vars:
+    course: "AIOps with DevSecOps On AWS"  # String
+    duration_in_hours: 150                # Integer
+    is_live_session: true                 # Boolean
+    topics:                               # List
+      - Linux
+      - Shell
+      - Ansible
+      - Terraform
+    more_details:                         # Dictionary
+      trainer: siva
+      months: 4
+    exact_duration_in_months: 4.5         # Float
+
+  tasks:
+    - name: Print the info and types
+      debug:
+        msg: |
+          course: {{ course }} : {{ course | type_debug }}
+          duration: {{ duration_in_hours }} : {{ duration_in_hours | type_debug }}
+          is live: {{ is_live_session }} : {{ is_live_session | type_debug }}
+          topics: {{ topics }} : {{ topics | type_debug }}
+          more details: {{ more_details }} : {{ more_details | type_debug }}
+          exact duration: {{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug }}
