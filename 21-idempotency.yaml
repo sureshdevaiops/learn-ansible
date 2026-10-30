@@ -1,0 +1,9 @@
+- name: demo on the idempotency create user
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+   - name: create user
+     user: 
+     name: roboshop # useradd roboshop
+
